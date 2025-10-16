@@ -6,9 +6,9 @@ from datetime import datetime
 LOG_DIR = "/home/pi/test_logs"
 
 
-if not os.path.exists(LOG_DIR):
-    raise FileNotFoundError(f"Log klasörü bulunamadı: {LOG_DIR}\n"
-                            f"Lütfen manuel oluştur: mkdir {LOG_DIR}")
+#if not os.path.exists(LOG_DIR):
+#    raise FileNotFoundError(f"Log klasörü bulunamadı: {LOG_DIR}\n"
+#                            f"Lütfen manuel oluştur: mkdir {LOG_DIR}")
 
 
 while True:
