@@ -1,0 +1,11 @@
+sudo nano /etc/systemd/system/waypoint_mission.service
+
+sudo systemctl enable waypoint_mission.service
+
+
+#pakur2 ye geç
+sudo systemctl stop waypoint_mission.service
+  sudo nano /etc/systemd/system/waypoint_mission.service
+  ExecStart=/usr/bin/python3 /home/pi/parkur2.py
+  sudo systemctl daemon-reload
+  sudo systemctl enable waypoint_mission.service
