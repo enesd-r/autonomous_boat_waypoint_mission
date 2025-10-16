@@ -1,0 +1,16 @@
+[Unit]
+Description=Otonom Görev (4 Nokta + RTL + Loglama)
+After=network.target serial-getty@ttyAMA0.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+ExecStartPre=/bin/sleep 10
+ExecStart=/usr/bin/python3 /home/pi/waypoint_mission.py
+Restart=always
+RestartSec=5
+User=pi
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
